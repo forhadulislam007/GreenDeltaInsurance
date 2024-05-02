@@ -115,13 +115,13 @@ Cypress.Commands.add('checkbox', () =>{
 
     //Remove or add // before these lines as per your need to check the items
 
-    //cy.screenshot()
+    cy.screenshot()
 })
 
 Cypress.Commands.add('getqoute', () =>{
     cy.get('#getMotorQuoteButton').click()
     cy.wait(5000)
-    //cy.screenshot()
+    cy.screenshot()
     cy.wait(2000)
 })
 
