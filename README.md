@@ -70,8 +70,10 @@ Let's go through one by one.
 
 ## To check existing/create new extent report for this project:
 
+    Path: cypress/reports
+
 - **Existing report**
-    - Open the index.html file in any browser and check report details.
+    - Open the index.html (html/index.html) file in any browser and check report details.
     - Here we have reference screenshots too.
 
 - **Prepare new report**
