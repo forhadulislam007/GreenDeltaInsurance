@@ -1,0 +1,12 @@
+{
+  "sitedata": {
+    "siteURL": "https://cal.green-delta.com/motor-insurance/"
+  },
+  "vehicle": {
+    "v1": "Motor Cycle",
+    "v2": "Car",
+    "v3": "Truck",
+    "v4": "Bus",
+    "v5": "Ambulance"
+  }
+}
