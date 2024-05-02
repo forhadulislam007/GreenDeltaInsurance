@@ -36,14 +36,14 @@ We will run the files in e2e folder. There are different types of specs (The fil
 
 Let's go through one by one.
 
-- sitevisit.cy.js 
+- **sitevisit.cy.js**
     - This one is a basic specs, that will only visit the url.
 
-- searchvehicle.cy.js
+- **searchvehicle.cy.js**
     - As per the requirement mentioned in the assessment, the user will search different vehicles after visiting the site.
     There are multiple vehicles, and I use few of them. 
     Please remove the '//' before the the codes to use it.
-    For example, if the spec contains:
+    -For example, if the spec contains:
         cy.bus()
         cy.motorcycle()
         cy.car()
