@@ -37,22 +37,19 @@ We will run the files in e2e folder. There are different types of specs (The fil
 Let's go through one by one.
 
 - **sitevisit.cy.js**
-    - This one is a basic specs, that will only visit the url.
+    - This one is a basic specs, that will only visit the site from the url.
 
 - **searchvehicle.cy.js**
     - As per the requirement mentioned in the assessment, the user will search different vehicles after visiting the site.
     There are multiple vehicles, and I use few of them. 
-    Please remove the '//' before the the codes to use it.
-    -For example, if the spec contains:
-        cy.bus()
-        cy.motorcycle()
-        cy.car()
-    And the user wants to search Car, then the code will be like:
-        //cy.bus()
-        //cy.motorcycle()
-        cy.car()
+    Please remove the '//' before the vehicle types to use it. (e.g. In current state, the spec will search the Motor Cycle, but if you want's to search Car, then add '//' before the motorcycle and remove the '//' from the car.)
 
-    Same goes for other's too.
+-**mandatoryfields.cy.js**
+    - After visiting the site cypress will directly click on the Get Qoute button without submitting any required informations.
 
+-**numericvalue.cy.js**
+    - It will insert alphabets in numeric fields (e.g. Sum Insured field) and click on the Get Qoute button to check the validation for numeric inputs.
+        We can use special characters too, to perform this check. 
+        Just change the sum (under the otherinfos) in the sitedata.json file.
 
 

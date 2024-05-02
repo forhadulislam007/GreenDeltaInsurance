@@ -8,5 +8,8 @@
     "v3": "Truck",
     "v4": "Bus",
     "v5": "Ambulance"
+  },
+  "otherinfos": {
+    "sum": "aabbcc"
   }
 }

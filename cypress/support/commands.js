@@ -26,6 +26,8 @@
 
 import './siteVisit'
 import './searchVehicle'
+import './mandatoryFields'
+import './numericValue'
 
 // cypress/support/commands.js
 Cypress.Commands.add("takeScreenshot", () => {
