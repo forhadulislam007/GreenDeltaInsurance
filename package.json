@@ -6,6 +6,13 @@
     "cypress-mochawesome-reporter": "^3.8.2"
   },
   "dependencies": {
-    "cypress-real-events": "^1.12.0"
+    "allure-commandline": "^2.29.0",
+    "cypress-real-events": "^1.12.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "save-dev": "^0.0.1-security"
+  },
+  "scripts": {
+    "html-report": "cypress run -- --spec e2e/*.js --browser chrome --headed"
   }
+  
 }

@@ -27,6 +27,8 @@ SQA automation assessment for Green Delta Insurance.
 - **cypress/**
     -**e2e/**: Files containing end-to-end test scripts.
     - **fixtures/**: Fixture files (e.g., test data, image, pdf, etc.)
+    - **reports/html**: HTML report on my automation. 
+    Please open the index.html file in any browser to check the report details. Also check the screenshots too for reference.
     - **screenshots/**: Screenshots while executing the test. 
     Please remove the current screenshots, before running any test. Sometimes cypress failed to remove them automatically.
     - **support/**: Custom commands and utility functions
@@ -53,14 +55,28 @@ Let's go through one by one.
         We can use special characters too, to perform this check. 
         Just change the sum (under the otherinfos) in the sitedata.json file.
 
--**carqoute.cy.js**
+- **carqoute.cy.js**
     - Complete data submission process to get qoutes for a Car.
     - Please follow the comments (Started with //) to understand clearly. 
     I also used separate lines for types that have multiple values (e.g. Vehicle Type: Private/Commercial, also for the CC/Ton/Seat).
     To change the type just comment the current one, and remove the comment from the one you wished to use.
 
--**sitedata.json**
+- **termsofuse.cy.js**
+    - This spec will visit the website, clicks the Terms of Use and then it will automatically get back to the previous page.
+
+- **sitedata.json**
     - This file contains all the data and datasets that I used for this automation. All the data are also categorised as per types.
     We can update any one of them to modify or change the current data while running the automation test.
 
+## To check existing/create new extent report for this project:
 
+- **Existing report**
+    - Open the index.html file in any browser and check report details.
+    - Here we have reference screenshots too.
+
+- **Prepare new report**
+    - First go to project directory.
+    - run npm run html-report from terminal. It will check all the specs one by one and then share the report in the report folder.
+    - We can modify the specs quantity (e.g. run test for all specs together, or for any random spec) from the package.json configuration.
+
+                Thank You!
