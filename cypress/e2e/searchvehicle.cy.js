@@ -1,5 +1,5 @@
-describe ('sitevisit', function(){
-    it('Should load data', function(){
+describe ('Search Vehicle', function(){
+    it('Should load vehicle type from dropdown', function(){
         cy.sitevisit()
         cy.motorcycle() //To search Motor Cycle from the dropdown
         //cy.car() //To search Car from the dropdown

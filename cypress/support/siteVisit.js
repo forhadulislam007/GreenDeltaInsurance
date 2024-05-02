@@ -7,5 +7,5 @@ before(function(){
 
 Cypress.Commands.add('sitevisit', () =>{
     cy.visit(testData.data.sitedata.siteURL)
-    // cy.takeScreenshot()
+    //cy.screenshot()
 })

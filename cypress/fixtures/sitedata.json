@@ -9,7 +9,33 @@
     "v4": "Bus",
     "v5": "Ambulance"
   },
+  "vehicletype": {
+    "vtype1": "Private",
+    "vtype2": "Commercial"
+  },
+  "cctonseat": {
+    "cc": "CC",
+    "ton": "Ton",
+    "seat": "Seat"
+  },
+  "policyperiod": {
+    "short": "Short",
+    "full": "Full"
+  },
+  "searchcustomer": {
+    "nid": "NID",
+    "mobile": "Mobile No",
+    "bin": "BIN"
+  },
   "otherinfos": {
-    "sum": "aabbcc"
+    "invalidsum": "aabbcc",
+    "validsum": "500000",
+    "passenger": "2",
+    "driver": "1",
+    "ccvalue": "1600",
+    "regino": "121165",
+    "nidno": "123456789",
+    "mobileno": "01245778899",
+    "binno": "654980"
   }
 }

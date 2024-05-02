@@ -1,5 +1,5 @@
-describe ('sitevisit', function(){
-    it('Should load data', function(){
+describe ('Site Visit', function(){
+    it('Should load website', function(){
         cy.sitevisit()
     })
 })

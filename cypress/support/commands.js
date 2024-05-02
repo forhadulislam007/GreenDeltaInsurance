@@ -28,8 +28,12 @@ import './siteVisit'
 import './searchVehicle'
 import './mandatoryFields'
 import './numericValue'
+import './carQoute'
+import './terms'
 
 // cypress/support/commands.js
 Cypress.Commands.add("takeScreenshot", () => {
     cy.screenshot();
 });
+
+

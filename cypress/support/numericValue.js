@@ -5,15 +5,11 @@ before(function(){
     })
 })
 
-Cypress.Commands.add('sitevisit', () =>{
-    cy.visit(testData.data.sitedata.siteURL)
-    // cy.takeScreenshot()
-})
-
 Cypress.Commands.add('numericvaluecheck', () =>{
-    cy.get('#sumInsured').type(testData.data.otherinfos.sum)
+    cy.get('#sumInsured').type(testData.data.otherinfos.invalidsum)
 })
 
 Cypress.Commands.add('getqoute', () =>{
     cy.get('#getMotorQuoteButton').click()
+    cy.screenshot()
 })

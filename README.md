@@ -27,7 +27,8 @@ SQA automation assessment for Green Delta Insurance.
 - **cypress/**
     -**e2e/**: Files containing end-to-end test scripts.
     - **fixtures/**: Fixture files (e.g., test data, image, pdf, etc.)
-    - **screenshots/**: Screenshots while executing the test.
+    - **screenshots/**: Screenshots while executing the test. 
+    Please remove the current screenshots, before running any test. Sometimes cypress failed to remove them automatically.
     - **support/**: Custom commands and utility functions
     - **cypress.config.js**: Cypress configuration file
 
@@ -44,12 +45,22 @@ Let's go through one by one.
     There are multiple vehicles, and I use few of them. 
     Please remove the '//' before the vehicle types to use it. (e.g. In current state, the spec will search the Motor Cycle, but if you want's to search Car, then add '//' before the motorcycle and remove the '//' from the car.)
 
--**mandatoryfields.cy.js**
+- **mandatoryfields.cy.js**
     - After visiting the site cypress will directly click on the Get Qoute button without submitting any required informations.
 
--**numericvalue.cy.js**
+- **numericvalue.cy.js**
     - It will insert alphabets in numeric fields (e.g. Sum Insured field) and click on the Get Qoute button to check the validation for numeric inputs.
         We can use special characters too, to perform this check. 
         Just change the sum (under the otherinfos) in the sitedata.json file.
+
+-**carqoute.cy.js**
+    - Complete data submission process to get qoutes for a Car.
+    - Please follow the comments (Started with //) to understand clearly. 
+    I also used separate lines for types that have multiple values (e.g. Vehicle Type: Private/Commercial, also for the CC/Ton/Seat).
+    To change the type just comment the current one, and remove the comment from the one you wished to use.
+
+-**sitedata.json**
+    - This file contains all the data and datasets that I used for this automation. All the data are also categorised as per types.
+    We can update any one of them to modify or change the current data while running the automation test.
 
 
